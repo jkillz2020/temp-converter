@@ -60,7 +60,7 @@ function enterKeyPressed(keypress){
 
 function clear(){
   document.getElementById("temp-input").value = "";
-  document.getElementById("temp-output").innerHTML = "";
+  document.getElementById("temp-output").value = "";
 }
 
 clearBtn.addEventListener("click", clear);
