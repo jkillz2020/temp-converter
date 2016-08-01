@@ -54,7 +54,7 @@ function determineConverter (clickEvent) {
 
 function enterKeyPressed(keypress){
   if (keypress.which === 13) {
-    displayConvertedData();
+    determineConverter();
   }
 }
 
