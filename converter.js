@@ -28,7 +28,7 @@ function toFahrenheit () {
   var convertedF = ((userInputF * 1.8) + 32);
   output.value = convertedF + " degrees Fahrenheit"
   if (convertedF > 90) {
-    output.style.color= "red";
+    output.style.color = "red";
   } else if (convertedF <= 32) {
     output.style.color = "blue";
   } else {
