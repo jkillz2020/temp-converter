@@ -12,7 +12,7 @@ button.addEventListener("click", determineConverter);
 function toCelsius () {
   var userInputC = userinput.value;
   var convertedC = ((userInputC - 32) / 1.8);
-  output.value = convertedC + " degrees Celsius"
+  output.innerHTML = convertedC + " degrees Celsius"
   if (convertedC > 32) {
     output.style.color = "red";
   } else if (convertedC <= 0) {
@@ -26,7 +26,7 @@ function toCelsius () {
 function toFahrenheit () {
   var userInputF = userinput.value;
   var convertedF = ((userInputF * 1.8) + 32);
-  output.value = convertedF + " degrees Fahrenheit"
+  output.innerHTML = convertedF + " degrees Fahrenheit"
   if (convertedF > 90) {
     output.style.color = "red";
   } else if (convertedF <= 32) {
@@ -60,7 +60,7 @@ function enterKeyPressed(keypress){
 
 function clear(){
   document.getElementById("temp-input").value = "";
-  document.getElementById("temp-output").value = "";
+  document.getElementById("temp-output").innerHTML = "";
 }
 
 clearBtn.addEventListener("click", clear);
